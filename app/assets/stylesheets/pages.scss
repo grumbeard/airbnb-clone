@@ -1,0 +1,37 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.flats-container {
+  text-align: center;
+  display: flex;
+}
+
+.flat {
+  img {
+    width: 200px;
+    border-radius: 15px;
+  }
+  margin: 10px;
+}
+
+.flat-results {
+    width: 400px;
+  img {
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+  }
+}
+
+.flat-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-container {
+  display: flex;
+}
+
+.map-container {
+  margin: 20px;
+}

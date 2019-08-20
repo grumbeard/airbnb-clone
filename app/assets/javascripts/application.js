@@ -14,3 +14,20 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+// import mapboxgl from 'mapbox-gl';
+
+const lattitude = document.querySelector('.flat-details').dataset.lat;
+const longitude = document.querySelector('.flat-details').dataset.lng;
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ3J1bWJlYXJkIiwiYSI6ImNqejNuenJmMzAzeGMzYmxtdGw2aHQxNXkifQ.fTcihIVVVpOJjB7__u8ugg';
+const map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v9',
+  center: [ longitude, lattitude ],
+  zoom: 12
+});
+
+new mapboxgl.Marker()
+  .setLngLat([ longitude, lattitude ])
+  .addTo(map);

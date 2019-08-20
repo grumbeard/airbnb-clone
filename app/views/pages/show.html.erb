@@ -1,0 +1,17 @@
+<div class="body-container">
+  <div class="flat-results">
+    <img src="<%= @flat['imageUrl'] %>" alt="<%= @flat['name'] %>">
+    <div class="flat-details" data-lat="<%= @flat['lat'] %>" data-lng="<%= @flat['lng'] %>">
+      <p><%= @flat['name'] %></p>
+      <p>
+        <strong><%= @flat['price'] %>
+        <%= @flat['priceCurrency'] %></strong>
+      </p>
+    </div>
+  </div>
+  <div class="map-container">
+    <div id="map" style="height: 300px; width: 400px">
+    </div>
+  </div>
+</div>
+

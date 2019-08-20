@@ -1,0 +1,13 @@
+<h1>Pages#flats</h1>
+<p>Find me in app/views/pages/flats.html.erb</p>
+<div class="flats-container">
+  <% @flats.each do |flat|%>
+  <div class="flat">
+    <a href=<%= "/flats/" + flat['id'].to_s %>>
+      <img src=<%= flat['imageUrl'] %>>
+    </a>
+    <p><%= flat['name'] %></p>
+    <p><%= flat['priceCurrency'] %><%= flat['price'] %></p>
+  </div>
+  <% end %>
+</div>

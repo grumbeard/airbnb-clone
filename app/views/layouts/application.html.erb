@@ -5,11 +5,15 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/1.2.1/mapbox-gl.js" integrity="sha256-RVvT+Na6b33Pwo/M0oG+A1W1NjncSVQXo/TnUOCL8q8=" crossorigin="anonymous"></script>
+
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
   </head>
 
   <body>
     <%= yield %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>

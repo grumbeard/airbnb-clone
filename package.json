@@ -1,5 +1,7 @@
 {
   "name": "airbnb-clone",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "mapbox-gl": "^1.2.1"
+  }
 }
